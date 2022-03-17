@@ -1,0 +1,305 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  
+  
+
+  
+#main
+
+{
+  
+  margin:50px auto;
+  
+  
+  
+}
+  
+#title
+{
+  text-align: center;
+  padding:20px;
+  background-color: ##264d84;
+  color:white;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+input[type=text] 
+{
+  padding: 10px;
+  border-radius:10px;
+  width:40%;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border:0;
+}
+
+input[type=text]:hover
+{
+    /* border: 1px solid #aaa; */
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+input[type=email] 
+{
+  padding: 10px;
+  
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border:0;
+}
+
+input[type=number] 
+{
+  padding: 10px;
+  border-radius:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border:0;
+}
+
+
+  
+  #image
+  {
+    width: 100%;
+    height: auto;
+    max-width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+  
+  #img-div
+  {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    filter: grayscale(100%);
+    width: 100%;
+  }
+
+  
+  #survey-form{
+    background-color: #264d84;
+    font-family: 'Sansita Swashed', cursive;
+    font-size:16px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  body 
+  {
+    color:white;
+    /* font-family: Verdana; */
+    text-align: center;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F411%2F022%2Foriginal%2Fvector-blurred-bokeh-lights-night-time-wallpaper.jpg&f=1&nofb=1");
+
+  }
+  
+  #form-control
+  {
+    text-align: left;
+    margin-bottom: 25px;
+    
+  }
+  
+  
+  #submit
+  {
+    width:40%;
+    border-radius:10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:#90a2da;
+    /* background: rgba(0, 128, 0, 0.5) */
+    
+  }
+
+  
+  
+  #description
+  {
+    background-color: ##264d84;
+    color:white;
+    font-size: 16px;
+    text-align:center;
+    font-family: 'Sansita Swashed', cursive;
+    padding: 20px;
+  }
+
+  select{
+    padding: 10px;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border:0;
+    border-radius:10px;
+  }
+  select:hover
+  {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+
+  }
+
+  label
+  {
+    display:block;
+    margin-bottom:4px;
+    position: relative; 
+    padding-left:30px; 
+    cursor: pointer;
+  }
+  label input[type=radio] 
+  {
+    position: absolute; 
+    opactiy: 0;
+    width:0; 
+    height:0;
+  }
+
+  
+  
+  #radio-button 
+  {
+    display: inline-block;
+    width: auto;
+  }
+  
+  #textarea
+  {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border:2;
+        
+  }
+  
+  
+
+</style>
+</head>
+<body>
+  
+
+
+  <h1 id="title">Feedback Form</h1>
+    
+  <p id="description"> Thank you for visiting Belle Bijoux! We'd like to hear what you think of us: </p>
+    
+  <form id="survey-form">
+    
+    <div class="form-control">
+      
+      <label id="name-label" for="firstname">What is your first name?</label>
+      <input id="name" type="text" name="firstname" placeholder="Name goes here" required><br><br>
+      
+      <label id="name-label" for="secondname">What is your second name?</label>
+      <input id="name" type="text" name="secondname" placeholder="Name goes here"><br>
+
+    </div>
+    
+    <br><br>
+    
+    <div class="form-control">
+      <label id="email-label" for="email">What is your email?</label>
+      <input id="email" type="email" name="email" placeholder="Email goes here" required><br>
+    </div>
+    
+    <br><br>
+    
+    <div class="form-control">
+      <label id="number-label" for="number">What is your phone number?</label>
+      <input id="number" type="number" name="number" min="1" max="10" placeholder="Number goes here"><br>
+    </div>
+    
+    <br><br>
+    
+    <div class="form-control">
+      <label id="number-label" for="number">What is your gender?</label>
+      <select>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Prefer not to say</option>
+      </select> 
+
+    </div>
+
+    <br><br>
+    
+    <div class="form-control">
+      <label id="dropdown-label" for="options">What service were you looking for today?</label>
+      <select id="dropdown" name="dropdown"> 
+        <option>Salon</option>
+        <option>Manicure</option>
+        <option>Pedicure</option>
+        <option>Repair</option>
+      </select>
+    </div><br>
+    
+    
+    
+    <div class="form-control">
+      
+      <label for="subscribe">Which activites were you most engaged by today?</label><br>
+      
+      <label for="inp-1"><input type="checkbox"name="inp" value="inp-magazine">Reading a magazine</input></label><br>
+      <label for="inp-1"><input type="checkbox"name="inp" value="inp-tv">Watching TV</input></label><br>
+      <label for="inp-3"><input type="checkbox"name="inp" value="inp-crossword">Solving a crossword</input></label><br>
+      <label for="inp-4"><input type="checkbox"name="inp" value="inp-radio">Listening to the radio</input></label><br>
+      <label for="inp-5"><input type="checkbox"name="inp" value="inp-newspaper">Reading a newspaper</input></label><br>
+      <label for="inp-6"><input type="checkbox"name="inp" value="inp-salonist">Talking to the salonist</input></label>
+      
+      <br><br>
+
+    </div>
+
+    <div id="radio" class="form-control">
+      <label>Would you recommend our salon to a friend?</label>
+      <input type="radio" name="confirmation" value="yes">Yes
+      <input type="radio" name="confirmation" value="no">No
+      <br>
+    </div>
+    <br><br>
+
+    <div class="form-control">
+      <label for="comments">Any questions? Write them here</label><br>
+        <textarea id="textarea" placeholder="Ask away..."></textarea>
+        <br>
+    </div>
+      
+
+    <p id="description"> Thank you for for you feedback on Belle Bijoux! We take your input dearly. Have a lovely day! </p>
+
+
+    <div class="form-control">
+      <button id="submit" type="submit" value="submit">Submit</button>
+    </div>
+      
+      
+      
+      
+  </form>
+  
+</body>
